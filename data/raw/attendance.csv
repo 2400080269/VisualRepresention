@@ -1,0 +1,753 @@
+student_id,subject,total_classes,attended
+1001,Python,50,40.0
+1001,DBMS,52,41.0
+1001,Statistics,54,44.0
+1001,Java,54,44.0
+1001,Machine Learning,48,40.0
+1002,Python,48,19.0
+1002,DBMS,50,20.0
+1002,Statistics,50,23.0
+1002,Java,52,22.0
+1002,Machine Learning,48,23.0
+1003,Python,54,33.0
+1003,DBMS,48,28.0
+1003,Statistics,50,29.0
+1003,Java,48,26.0
+1003,Machine Learning,54,27.0
+1004,Python,48,
+1004,DBMS,50,37.0
+1004,Statistics,54,43.0
+1004,Java,52,41.0
+1004,Machine Learning,52,38.0
+1005,Python,54,50.0
+1005,DBMS,54,45.0
+1005,Statistics,54,65.0
+1005,Java,50,46.0
+1005,Machine Learning,54,46.0
+1006,Python,50,43.0
+1006,DBMS,54,49.0
+1006,Statistics,50,46.0
+1006,Java,50,45.0
+1006,Machine Learning,48,40.0
+1007,Python,52,35.0
+1007,DBMS,54,38.0
+1007,Statistics,52,34.0
+1007,Java,52,38.0
+1007,Machine Learning,48,34.0
+1008,Python,52,37.0
+1008,DBMS,52,38.0
+1008,Statistics,54,43.0
+1008,Java,50,39.0
+1008,Machine Learning,54,40.0
+1009,Python,54,49.0
+1009,DBMS,52,49.0
+1009,Statistics,52,48.0
+1009,Java,54,47.0
+1009,Machine Learning,54,49.0
+1010,Python,52,42.0
+1010,DBMS,50,38.0
+1010,Statistics,50,38.0
+1010,Java,54,43.0
+1010,Machine Learning,50,38.0
+1011,Python,54,49.0
+1011,DBMS,48,40.0
+1011,Statistics,52,40.0
+1011,Java,54,47.0
+1011,Machine Learning,54,43.0
+1012,Python,54,40.0
+1012,DBMS,50,38.0
+1012,Statistics,54,38.0
+1012,Java,48,40.0
+1012,Machine Learning,50,38.0
+1013,Python,52,34.0
+1013,DBMS,48,31.0
+1013,Statistics,54,39.0
+1013,Java,48,36.0
+1013,Machine Learning,54,37.0
+1014,Python,48,26.0
+1014,DBMS,50,23.0
+1014,Statistics,54,29.0
+1014,Java,50,26.0
+1014,Machine Learning,48,22.0
+1015,Python,54,43.0
+1015,DBMS,52,42.0
+1015,Statistics,52,47.0
+1015,Java,54,46.0
+1015,Machine Learning,48,42.0
+1016,Python,52,35.0
+1016,DBMS,54,37.0
+1016,Statistics,52,37.0
+1016,Java,54,37.0
+1016,Machine Learning,48,32.0
+1017,Python,48,43.0
+1017,DBMS,50,41.0
+1017,Statistics,52,50.0
+1017,Java,50,44.0
+1017,Machine Learning,48,42.0
+1018,Python,54,40.0
+1018,DBMS,48,35.0
+1018,Statistics,48,37.0
+1018,Java,54,40.0
+1018,Machine Learning,50,37.0
+1019,Python,52,44.0
+1019,DBMS,48,41.0
+1019,Statistics,48,45.0
+1019,Java,52,46.0
+1019,Machine Learning,48,42.0
+1020,Python,52,24.0
+1020,DBMS,52,23.0
+1020,Statistics,52,24.0
+1020,Java,54,26.0
+1020,Machine Learning,50,25.0
+1021,Python,50,21.0
+1021,DBMS,54,29.0
+1021,Statistics,50,27.0
+1021,Java,50,26.0
+1021,Machine Learning,50,21.0
+1022,Python,48,38.0
+1022,DBMS,54,41.0
+1022,Statistics,50,37.0
+1022,Java,54,40.0
+1022,Machine Learning,50,37.0
+1023,Python,50,42.0
+1023,DBMS,54,40.0
+1023,Statistics,52,42.0
+1023,Java,54,41.0
+1023,Machine Learning,52,37.0
+1024,Python,48,32.0
+1024,DBMS,54,36.0
+1024,Statistics,52,32.0
+1024,Java,50,38.0
+1024,Machine Learning,48,30.0
+1025,Python,54,51.0
+1025,DBMS,52,52.0
+1025,Statistics,52,49.0
+1025,Java,54,52.0
+1025,Machine Learning,52,52.0
+1026,Python,54,25.0
+1026,DBMS,52,26.0
+1026,Statistics,50,26.0
+1026,Java,54,30.0
+1026,Machine Learning,54,32.0
+1027,Python,48,42.0
+1027,DBMS,50,39.0
+1027,Statistics,54,47.0
+1027,Java,52,41.0
+1027,Machine Learning,52,44.0
+1028,Python,52,52.0
+1028,DBMS,48,48.0
+1028,Statistics,54,52.0
+1028,Java,52,52.0
+1028,Machine Learning,48,48.0
+1029,Python,48,23.0
+1029,DBMS,54,27.0
+1029,Statistics,52,27.0
+1029,Java,50,22.0
+1029,Machine Learning,52,26.0
+1030,Python,50,36.0
+1030,DBMS,50,36.0
+1030,Statistics,52,38.0
+1030,Java,50,41.0
+1030,Machine Learning,48,39.0
+1031,Python,48,38.0
+1031,DBMS,52,38.0
+1031,Statistics,54,45.0
+1031,Java,48,39.0
+1031,Machine Learning,52,38.0
+1032,Python,50,41.0
+1032,DBMS,48,34.0
+1032,Statistics,52,42.0
+1032,Java,52,37.0
+1032,Machine Learning,54,39.0
+1033,Python,50,37.0
+1033,DBMS,50,41.0
+1033,Statistics,50,37.0
+1033,Java,52,41.0
+1033,Machine Learning,52,37.0
+1034,Python,50,48.0
+1034,DBMS,52,49.0
+1034,Statistics,54,45.0
+1034,Java,52,46.0
+1034,Machine Learning,52,46.0
+1035,Python,48,33.0
+1035,DBMS,54,37.0
+1035,Statistics,48,33.0
+1035,Java,50,36.0
+1035,Machine Learning,50,35.0
+1036,Python,54,45.0
+1036,DBMS,52,45.0
+1036,Statistics,48,41.0
+1036,Java,54,46.0
+1036,Machine Learning,48,44.0
+1037,Python,52,47.0
+1037,DBMS,48,45.0
+1037,Statistics,54,48.0
+1037,Java,52,48.0
+1037,Machine Learning,52,46.0
+1038,Python,54,38.0
+1038,DBMS,52,36.0
+1038,Statistics,48,30.0
+1038,Java,50,35.0
+1038,Machine Learning,54,34.0
+1039,Python,48,36.0
+1039,DBMS,52,42.0
+1039,Statistics,50,38.0
+1039,Java,48,37.0
+1039,Machine Learning,54,42.0
+1040,Python,52,38.0
+1040,DBMS,54,39.0
+1040,Statistics,48,33.0
+1040,Java,50,33.0
+1040,Machine Learning,48,31.0
+1041,Python,48,36.0
+1041,DBMS,52,47.0
+1041,Statistics,54,43.0
+1041,Java,48,42.0
+1041,Machine Learning,48,42.0
+1042,Python,50,39.0
+1042,DBMS,50,38.0
+1042,Statistics,54,34.0
+1042,Java,54,38.0
+1042,Machine Learning,52,37.0
+1043,Python,54,38.0
+1043,DBMS,50,38.0
+1043,Statistics,54,39.0
+1043,Java,48,38.0
+1043,Machine Learning,54,40.0
+1044,Python,54,25.0
+1044,DBMS,52,26.0
+1044,Statistics,48,23.0
+1044,Java,52,26.0
+1044,Machine Learning,50,27.0
+1045,Python,54,45.0
+1045,DBMS,54,48.0
+1045,Statistics,50,45.0
+1045,Java,52,48.0
+1045,Machine Learning,48,44.0
+1046,Python,52,33.0
+1046,DBMS,52,36.0
+1046,Statistics,48,33.0
+1046,Java,54,37.0
+1046,Machine Learning,52,36.0
+1047,Python,50,50.0
+1047,DBMS,48,46.0
+1047,Statistics,54,50.0
+1047,Java,48,45.0
+1047,Machine Learning,50,50.0
+1048,Python,48,47.0
+1048,DBMS,48,47.0
+1048,Statistics,52,51.0
+1048,Java,50,48.0
+1048,Machine Learning,50,45.0
+1049,Python,50,35.0
+1049,DBMS,48,34.0
+1049,Statistics,50,37.0
+1049,Java,50,32.0
+1049,Machine Learning,50,38.0
+1050,Python,52,44.0
+1050,DBMS,50,42.0
+1050,Statistics,48,42.0
+1050,Java,52,43.0
+1050,Machine Learning,50,43.0
+1051,Python,50,45.0
+1051,DBMS,52,42.0
+1051,Statistics,50,43.0
+1051,Java,48,41.0
+1051,Machine Learning,48,41.0
+1052,Python,50,38.0
+1052,DBMS,48,40.0
+1052,Statistics,52,41.0
+1052,Java,50,37.0
+1052,Machine Learning,52,41.0
+1053,Python,48,42.0
+1053,DBMS,50,45.0
+1053,Statistics,52,47.0
+1053,Java,48,42.0
+1053,Machine Learning,50,44.0
+1054,Python,54,49.0
+1054,DBMS,48,44.0
+1054,Statistics,48,43.0
+1054,Java,54,48.0
+1054,Machine Learning,54,45.0
+1055,Python,52,36.0
+1055,DBMS,48,31.0
+1055,Statistics,54,37.0
+1055,Java,50,37.0
+1055,Machine Learning,48,35.0
+1056,Python,52,51.0
+1056,DBMS,54,54.0
+1056,Statistics,48,48.0
+1056,Java,48,48.0
+1056,Machine Learning,54,54.0
+1057,Python,54,44.0
+1057,DBMS,54,43.0
+1057,Statistics,48,41.0
+1057,Java,54,42.0
+1057,Machine Learning,54,43.0
+1058,Python,48,36.0
+1058,DBMS,48,38.0
+1058,Statistics,52,41.0
+1058,Java,50,37.0
+1058,Machine Learning,48,41.0
+1059,Python,50,23.0
+1059,DBMS,52,27.0
+1059,Statistics,52,26.0
+1059,Java,54,32.0
+1059,Machine Learning,52,26.0
+1060,Python,54,39.0
+1060,DBMS,54,37.0
+1060,Statistics,48,35.0
+1060,Java,48,36.0
+1060,Machine Learning,50,35.0
+1061,Python,54,33.0
+1061,DBMS,54,38.0
+1061,Statistics,50,38.0
+1061,Java,54,38.0
+1061,Machine Learning,52,37.0
+1062,Python,54,28.0
+1062,DBMS,54,24.0
+1062,Statistics,54,26.0
+1062,Java,48,24.0
+1062,Machine Learning,52,23.0
+1063,Python,54,39.0
+1063,DBMS,52,40.0
+1063,Statistics,52,40.0
+1063,Java,52,42.0
+1063,Machine Learning,50,36.0
+1064,Python,54,32.0
+1064,DBMS,48,29.0
+1064,Statistics,48,27.0
+1064,Java,48,28.0
+1064,Machine Learning,48,26.0
+1065,Python,54,41.0
+1065,DBMS,48,37.0
+1065,Statistics,52,37.0
+1065,Java,50,37.0
+1065,Machine Learning,48,41.0
+1066,Python,52,40.0
+1066,DBMS,48,40.0
+1066,Statistics,54,43.0
+1066,Java,52,42.0
+1066,Machine Learning,54,46.0
+1067,Python,48,32.0
+1067,DBMS,52,37.0
+1067,Statistics,52,38.0
+1067,Java,52,41.0
+1067,Machine Learning,48,31.0
+1068,Python,50,40.0
+1068,DBMS,50,37.0
+1068,Statistics,54,45.0
+1068,Java,50,37.0
+1068,Machine Learning,48,39.0
+1069,Python,52,31.0
+1069,DBMS,52,27.0
+1069,Statistics,48,25.0
+1069,Java,52,30.0
+1069,Machine Learning,50,32.0
+1070,Python,54,40.0
+1070,DBMS,48,37.0
+1070,Statistics,52,36.0
+1070,Java,48,35.0
+1070,Machine Learning,50,37.0
+1071,Python,52,48.0
+1071,DBMS,52,45.0
+1071,Statistics,52,45.0
+1071,Java,52,48.0
+1071,Machine Learning,48,45.0
+1072,Python,50,43.0
+1072,DBMS,50,39.0
+1072,Statistics,54,46.0
+1072,Java,48,37.0
+1072,Machine Learning,50,39.0
+1073,Python,48,34.0
+1073,DBMS,48,33.0
+1073,Statistics,50,35.0
+1073,Java,54,37.0
+1073,Machine Learning,54,38.0
+1074,Python,54,54.0
+1074,DBMS,52,52.0
+1074,Statistics,50,50.0
+1074,Java,52,52.0
+1074,Machine Learning,52,52.0
+1075,Python,52,51.0
+1075,DBMS,48,47.0
+1075,Statistics,48,48.0
+1075,Java,50,50.0
+1075,Machine Learning,50,48.0
+1076,Python,48,32.0
+1076,DBMS,48,36.0
+1076,Statistics,52,34.0
+1076,Java,54,39.0
+1076,Machine Learning,54,38.0
+1077,Python,54,50.0
+1077,DBMS,54,51.0
+1077,Statistics,54,50.0
+1077,Java,52,46.0
+1077,Machine Learning,50,46.0
+1078,Python,48,31.0
+1078,DBMS,52,35.0
+1078,Statistics,54,37.0
+1078,Java,48,32.0
+1078,Machine Learning,52,33.0
+1079,Python,54,47.0
+1079,DBMS,52,44.0
+1079,Statistics,48,40.0
+1079,Java,50,46.0
+1079,Machine Learning,54,46.0
+1080,Python,48,36.0
+1080,DBMS,48,34.0
+1080,Statistics,50,37.0
+1080,Java,52,41.0
+1080,Machine Learning,50,37.0
+1081,Python,50,27.0
+1081,DBMS,52,33.0
+1081,Statistics,52,34.0
+1081,Java,52,37.0
+1081,Machine Learning,48,30.0
+1082,Python,48,30.0
+1082,DBMS,54,34.0
+1082,Statistics,54,37.0
+1082,Java,50,34.0
+1082,Machine Learning,50,32.0
+1083,Python,54,44.0
+1083,DBMS,50,44.0
+1083,Statistics,52,42.0
+1083,Java,48,39.0
+1083,Machine Learning,54,42.0
+1084,Python,48,47.0
+1084,DBMS,54,53.0
+1084,Statistics,48,48.0
+1084,Java,54,52.0
+1084,Machine Learning,48,48.0
+1085,Python,52,33.0
+1085,DBMS,54,34.0
+1085,Statistics,54,34.0
+1085,Java,54,32.0
+1085,Machine Learning,52,34.0
+1086,Python,48,36.0
+1086,DBMS,54,40.0
+1086,Statistics,48,37.0
+1086,Java,52,37.0
+1086,Machine Learning,50,39.0
+1087,Python,54,33.0
+1087,DBMS,52,28.0
+1087,Statistics,48,28.0
+1087,Java,54,31.0
+1087,Machine Learning,48,28.0
+1088,Python,50,40.0
+1088,DBMS,54,38.0
+1088,Statistics,54,46.0
+1088,Java,48,37.0
+1088,Machine Learning,54,41.0
+1089,Python,52,33.0
+1089,DBMS,52,30.0
+1089,Statistics,50,30.0
+1089,Java,52,35.0
+1089,Machine Learning,50,33.0
+1090,Python,48,31.0
+1090,DBMS,48,37.0
+1090,Statistics,50,35.0
+1090,Java,52,33.0
+1090,Machine Learning,52,38.0
+1091,Python,50,37.0
+1091,DBMS,50,39.0
+1091,Statistics,48,36.0
+1091,Java,50,34.0
+1091,Machine Learning,52,37.0
+1092,Python,50,40.0
+1092,DBMS,50,42.0
+1092,Statistics,50,42.0
+1092,Java,48,41.0
+1092,Machine Learning,50,42.0
+1093,Python,54,35.0
+1093,DBMS,54,30.0
+1093,Statistics,54,31.0
+1093,Java,52,30.0
+1093,Machine Learning,52,30.0
+1094,Python,50,35.0
+1094,DBMS,54,41.0
+1094,Statistics,48,37.0
+1094,Java,54,39.0
+1094,Machine Learning,54,35.0
+1095,Python,52,52.0
+1095,DBMS,52,50.0
+1095,Statistics,48,48.0
+1095,Java,52,51.0
+1095,Machine Learning,48,48.0
+1096,Python,52,42.0
+1096,DBMS,54,43.0
+1096,Statistics,54,39.0
+1096,Java,48,39.0
+1096,Machine Learning,48,33.0
+1097,Python,52,51.0
+1097,DBMS,52,52.0
+1097,Statistics,48,44.0
+1097,Java,48,48.0
+1097,Machine Learning,54,54.0
+1098,Python,54,47.0
+1098,DBMS,48,42.0
+1098,Statistics,54,45.0
+1098,Java,50,44.0
+1098,Machine Learning,52,42.0
+1099,Python,54,42.0
+1099,DBMS,50,38.0
+1099,Statistics,48,38.0
+1099,Java,54,42.0
+1099,Machine Learning,48,37.0
+1100,Python,52,50.0
+1100,DBMS,48,47.0
+1100,Statistics,50,45.0
+1100,Java,48,47.0
+1100,Machine Learning,50,46.0
+1101,Python,54,54.0
+1101,DBMS,54,53.0
+1101,Statistics,50,46.0
+1101,Java,52,46.0
+1101,Machine Learning,52,50.0
+1102,Python,52,37.0
+1102,DBMS,54,41.0
+1102,Statistics,54,39.0
+1102,Java,52,36.0
+1102,Machine Learning,48,33.0
+1103,Python,52,30.0
+1103,DBMS,48,33.0
+1103,Statistics,52,32.0
+1103,Java,48,30.0
+1103,Machine Learning,54,32.0
+1104,Python,52,36.0
+1104,DBMS,52,36.0
+1104,Statistics,50,34.0
+1104,Java,52,37.0
+1104,Machine Learning,48,34.0
+1105,Python,50,28.0
+1105,DBMS,52,32.0
+1105,Statistics,52,29.0
+1105,Java,54,34.0
+1105,Machine Learning,50,31.0
+1106,Python,48,26.0
+1106,DBMS,52,31.0
+1106,Statistics,54,30.0
+1106,Java,52,29.0
+1106,Machine Learning,50,31.0
+1107,Python,48,29.0
+1107,DBMS,54,28.0
+1107,Statistics,52,29.0
+1107,Java,48,26.0
+1107,Machine Learning,52,32.0
+1108,Python,52,34.0
+1108,DBMS,50,37.0
+1108,Statistics,50,39.0
+1108,Java,52,41.0
+1108,Machine Learning,54,39.0
+1109,Python,50,23.0
+1109,DBMS,50,23.0
+1109,Statistics,50,25.0
+1109,Java,50,25.0
+1109,Machine Learning,48,22.0
+1110,Python,52,22.0
+1110,DBMS,48,19.0
+1110,Statistics,48,20.0
+1110,Java,52,19.0
+1110,Machine Learning,50,22.0
+1111,Python,54,41.0
+1111,DBMS,50,38.0
+1111,Statistics,50,38.0
+1111,Java,50,39.0
+1111,Machine Learning,50,38.0
+1112,Python,54,48.0
+1112,DBMS,48,45.0
+1112,Statistics,54,52.0
+1112,Java,52,47.0
+1112,Machine Learning,50,46.0
+1113,Python,54,22.0
+1113,DBMS,52,21.0
+1113,Statistics,54,21.0
+1113,Java,50,18.0
+1113,Machine Learning,50,21.0
+1114,Python,52,33.0
+1114,DBMS,54,36.0
+1114,Statistics,50,30.0
+1114,Java,52,32.0
+1114,Machine Learning,54,33.0
+1115,Python,54,38.0
+1115,DBMS,52,34.0
+1115,Statistics,54,30.0
+1115,Java,54,39.0
+1115,Machine Learning,50,32.0
+1116,Python,50,40.0
+1116,DBMS,50,40.0
+1116,Statistics,52,40.0
+1116,Java,48,37.0
+1116,Machine Learning,54,43.0
+1117,Python,52,30.0
+1117,DBMS,48,30.0
+1117,Statistics,48,27.0
+1117,Java,52,30.0
+1117,Machine Learning,48,32.0
+1118,Python,50,41.0
+1118,DBMS,52,40.0
+1118,Statistics,54,43.0
+1118,Java,50,41.0
+1118,Machine Learning,54,47.0
+1119,Python,48,37.0
+1119,DBMS,50,36.0
+1119,Statistics,54,39.0
+1119,Java,52,35.0
+1119,Machine Learning,48,33.0
+1120,Python,54,43.0
+1120,DBMS,48,38.0
+1120,Statistics,54,41.0
+1120,Java,52,42.0
+1120,Machine Learning,50,41.0
+1121,Python,54,36.0
+1121,DBMS,48,32.0
+1121,Statistics,52,35.0
+1121,Java,50,33.0
+1121,Machine Learning,48,30.0
+1122,Python,52,34.0
+1122,DBMS,48,33.0
+1122,Statistics,52,35.0
+1122,Java,50,37.0
+1122,Machine Learning,50,34.0
+1123,Python,48,33.0
+1123,DBMS,52,33.0
+1123,Statistics,54,36.0
+1123,Java,50,32.0
+1123,Machine Learning,54,39.0
+1124,Python,54,53.0
+1124,DBMS,48,48.0
+1124,Statistics,48,45.0
+1124,Java,48,46.0
+1124,Machine Learning,52,52.0
+1125,Python,50,30.0
+1125,DBMS,50,33.0
+1125,Statistics,54,33.0
+1125,Java,48,24.0
+1125,Machine Learning,52,33.0
+1126,Python,50,44.0
+1126,DBMS,52,46.0
+1126,Statistics,48,41.0
+1126,Java,48,42.0
+1126,Machine Learning,50,42.0
+1127,Python,54,37.0
+1127,DBMS,54,38.0
+1127,Statistics,48,30.0
+1127,Java,48,32.0
+1127,Machine Learning,54,36.0
+1128,Python,48,29.0
+1128,DBMS,50,31.0
+1128,Statistics,50,32.0
+1128,Java,52,36.0
+1128,Machine Learning,54,36.0
+1129,Python,48,36.0
+1129,DBMS,52,35.0
+1129,Statistics,50,33.0
+1129,Java,54,38.0
+1129,Machine Learning,50,36.0
+1130,Python,48,27.0
+1130,DBMS,52,24.0
+1130,Statistics,48,24.0
+1130,Java,48,23.0
+1130,Machine Learning,54,29.0
+1131,Python,54,37.0
+1131,DBMS,48,33.0
+1131,Statistics,54,37.0
+1131,Java,52,33.0
+1131,Machine Learning,52,30.0
+1132,Python,48,36.0
+1132,DBMS,52,33.0
+1132,Statistics,48,31.0
+1132,Java,52,32.0
+1132,Machine Learning,50,34.0
+1133,Python,48,37.0
+1133,DBMS,52,43.0
+1133,Statistics,50,39.0
+1133,Java,48,39.0
+1133,Machine Learning,52,45.0
+1134,Python,52,45.0
+1134,DBMS,50,43.0
+1134,Statistics,54,45.0
+1134,Java,54,47.0
+1134,Machine Learning,50,46.0
+1135,Python,50,39.0
+1135,DBMS,48,35.0
+1135,Statistics,54,42.0
+1135,Java,48,40.0
+1135,Machine Learning,52,41.0
+1136,Python,50,41.0
+1136,DBMS,48,44.0
+1136,Statistics,50,46.0
+1136,Java,48,45.0
+1136,Machine Learning,52,46.0
+1137,Python,52,48.0
+1137,DBMS,54,49.0
+1137,Statistics,54,47.0
+1137,Java,52,50.0
+1137,Machine Learning,48,44.0
+1138,Python,50,37.0
+1138,DBMS,52,38.0
+1138,Statistics,52,34.0
+1138,Java,48,32.0
+1138,Machine Learning,52,36.0
+1139,Python,52,34.0
+1139,DBMS,48,31.0
+1139,Statistics,52,35.0
+1139,Java,54,36.0
+1139,Machine Learning,54,38.0
+1140,Python,54,43.0
+1140,DBMS,54,44.0
+1140,Statistics,52,45.0
+1140,Java,50,40.0
+1140,Machine Learning,54,44.0
+1141,Python,54,39.0
+1141,DBMS,52,38.0
+1141,Statistics,52,40.0
+1141,Java,48,36.0
+1141,Machine Learning,54,41.0
+1142,Python,48,30.0
+1142,DBMS,54,34.0
+1142,Statistics,50,35.0
+1142,Java,52,34.0
+1142,Machine Learning,52,32.0
+1143,Python,48,28.0
+1143,DBMS,48,29.0
+1143,Statistics,52,27.0
+1143,Java,52,31.0
+1143,Machine Learning,52,33.0
+1144,Python,54,37.0
+1144,DBMS,54,36.0
+1144,Statistics,50,34.0
+1144,Java,54,37.0
+1144,Machine Learning,52,36.0
+1145,Python,54,34.0
+1145,DBMS,48,30.0
+1145,Statistics,52,35.0
+1145,Java,54,34.0
+1145,Machine Learning,52,34.0
+1146,Python,48,36.0
+1146,DBMS,48,35.0
+1146,Statistics,54,37.0
+1146,Java,52,36.0
+1146,Machine Learning,50,36.0
+1147,Python,48,40.0
+1147,DBMS,50,38.0
+1147,Statistics,54,45.0
+1147,Java,48,39.0
+1147,Machine Learning,50,43.0
+1148,Python,48,38.0
+1148,DBMS,50,37.0
+1148,Statistics,52,38.0
+1148,Java,52,36.0
+1148,Machine Learning,54,42.0
+1149,Python,48,31.0
+1149,DBMS,50,40.0
+1149,Statistics,54,36.0
+1149,Java,52,41.0
+1149,Machine Learning,52,40.0
+1150,Python,54,49.0
+1150,DBMS,48,44.0
+1150,Statistics,50,50.0
+1150,Java,52,51.0
+1150,Machine Learning,54,53.0
+1002,Python,48,19.0
+1002,DBMS,50,20.0
