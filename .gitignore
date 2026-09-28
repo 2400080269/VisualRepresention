@@ -1,0 +1,26 @@
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Data artifacts (keep raw baseline, ignore large generated model weights if needed)
+data/models/*.joblib
+*.db-journal
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints*/
+
+# Streamlit config / cache
+.streamlit/
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
