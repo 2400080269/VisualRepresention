@@ -1,0 +1,17 @@
+step,message,rows_affected
+Students: Deduplication,Removed duplicate student records,2
+Students: Missing Names,Imputed missing student names with default identifier,1
+Students: Missing Department,Imputed missing departments with mode (IT),1
+Students: Completed,Cleaned students dataset. Count: 150 (was 152),0
+Marks: Deduplication,Removed duplicate marks records for same student & subject,2
+Marks: Missing internal,Imputed missing internal marks with subject median,1
+Marks: Out-of-bounds internal,"Clipped invalid internal marks to [0, 20]",1
+Marks: Missing mid1,Imputed missing mid1 marks with subject median,1
+Marks: Out-of-bounds mid2,"Clipped invalid mid2 marks to [0, 25]",1
+Marks: Missing final,Imputed missing final marks with subject median,1
+Marks: Out-of-bounds final,"Clipped invalid final marks to [0, 100]",1
+Marks: Completed,Cleaned marks dataset. Count: 750 (was 752),0
+Attendance: Deduplication,Removed duplicate attendance entries,2
+Attendance: Missing attended,Imputed missing attended count with 75% class baseline,1
+Attendance: Out-of-bounds,Corrected attendance exceeding total classes or negative,1
+Attendance: Completed,Cleaned attendance dataset. Count: 750 (was 752),0
