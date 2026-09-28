@@ -27,6 +27,13 @@ from src.analysis import PerformanceAnalyzer
 from src.ml_predictor import StudentPerformancePredictor
 from src.utils import PALETTE, CATEGORY_COLORS, RISK_COLORS, generate_student_report_card, convert_df_to_csv
 
+# Safe statsmodels detection for Plotly OLS trendlines
+try:
+    import statsmodels.api
+    HAS_STATSMODELS = True
+except Exception:
+    HAS_STATSMODELS = False
+
 # ====================================================================
 # STREAMLIT APP CONFIGURATION
 # ====================================================================
@@ -293,7 +300,7 @@ if menu == "📊 Overview & KPIs":
             color="performance_category",
             color_discrete_map=CATEGORY_COLORS,
             hover_data=["student_id", "name", "department", "risk_level"],
-            trendline="ols",
+            trendline="ols" if HAS_STATSMODELS else None,
             labels={"overall_attendance_pct": "Attendance (%)", "average_marks": "Average Academic Score (%)"},
             title="Correlation: Class Attendance vs Performance"
         )
@@ -623,7 +630,7 @@ elif menu == "⏱️ Attendance & Correlation":
             },
             hover_name="name",
             hover_data=["student_id", "department", "pass_status"],
-            trendline="ols",
+            trendline="ols" if HAS_STATSMODELS else None,
             labels={"overall_attendance_pct": "Attendance (%)", "average_marks": "Average Academic Score (%)"}
         )
         # Add 75% critical threshold vertical line
@@ -990,3 +997,4 @@ Generated: Current Academic Session
 # Footer
 st.markdown("---")
 st.markdown("<p style='text-align: center; color: #9CA3AF;'>Student Performance Analytics & Visualization Platform • Resume-Ready Full Stack Data Project</p>", unsafe_allow_html=True)
+
