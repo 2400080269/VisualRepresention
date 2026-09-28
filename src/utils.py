@@ -92,3 +92,20 @@ def generate_student_report_card(student_row, student_subjects_df):
 def convert_df_to_csv(df):
     """Encodes a DataFrame into UTF-8 CSV bytes for Streamlit download button."""
     return df.to_csv(index=False).encode("utf-8")
+
+def df_to_markdown_safe(df):
+    """Safely converts a DataFrame to Markdown table with a built-in zero-dependency fallback."""
+    try:
+        import tabulate
+        return df.to_markdown(index=False)
+    except Exception:
+        if df is None or len(df) == 0:
+            return ""
+        headers = [str(c) for c in df.columns]
+        header_line = "| " + " | ".join(headers) + " |"
+        separator_line = "| " + " | ".join(["---"] * len(headers)) + " |"
+        rows = []
+        for row in df.itertuples(index=False):
+            rows.append("| " + " | ".join(str(val) for val in row) + " |")
+        return "\n".join([header_line, separator_line] + rows)
+
