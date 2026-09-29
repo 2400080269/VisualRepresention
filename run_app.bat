@@ -5,5 +5,5 @@ echo Launching Student Performance Analytics Platform...
 echo ======================================================================
 cd /d "%~dp0"
 call .venv\Scripts\activate.bat
-streamlit run dashboard\app.py
+streamlit run dashboard\app.py --browser.gatherUsageStats false
 pause

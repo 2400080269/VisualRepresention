@@ -188,3 +188,4 @@ if __name__ == "__main__":
     df_details, df_summary = processor.process_and_merge(stus, mrks, att)
     print("Processing sample:")
     print(df_summary[["student_id", "name", "department", "average_marks", "overall_attendance_pct", "performance_category", "risk_level"]].head())
+

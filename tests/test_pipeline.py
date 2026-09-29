@@ -12,9 +12,12 @@ import sys
 # Add src to path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
 
-from data_cleaning import DataCleaner
-from data_processing import DataProcessor, assign_performance_category, assign_attendance_category
-from ml_predictor import StudentPerformancePredictor
+from data_cleaning import DataCleaner  # type: ignore[reportMissingImports]
+from data_processing import (  # type: ignore[reportMissingImports]
+    DataProcessor,
+    assign_performance_category,
+    assign_attendance_category,
+)
 
 class TestStudentPipeline(unittest.TestCase):
 
@@ -88,3 +91,4 @@ class TestStudentPipeline(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

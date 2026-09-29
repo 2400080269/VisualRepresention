@@ -75,3 +75,4 @@ CREATE INDEX IF NOT EXISTS idx_students_dept ON students(department, year, secti
 CREATE INDEX IF NOT EXISTS idx_marks_student_subject ON marks(student_id, subject);
 CREATE INDEX IF NOT EXISTS idx_attendance_student_subject ON attendance(student_id, subject);
 CREATE INDEX IF NOT EXISTS idx_summary_perf ON student_summary(performance_category, risk_level);
+

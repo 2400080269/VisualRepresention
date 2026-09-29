@@ -170,3 +170,4 @@ class DataCleaner:
 if __name__ == "__main__":
     cleaner = DataCleaner()
     cleaner.clean_all()
+

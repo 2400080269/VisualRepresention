@@ -152,3 +152,4 @@ class PerformanceAnalyzer:
 if __name__ == "__main__":
     analyzer = PerformanceAnalyzer()
     print("Performance Analyzer ready.")
+

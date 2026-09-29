@@ -118,3 +118,4 @@ SELECT
 FROM student_summary
 GROUP BY department, section
 ORDER BY department, section;
+
