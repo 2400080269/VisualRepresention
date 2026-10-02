@@ -1,9 +1,23 @@
 @echo off
-title Student Performance Analytics & Visualization Platform
+setlocal
+chcp 65001 >nul
+title Student Performance Analytics & Early-Warning Platform
 echo ======================================================================
-echo Launching Student Performance Analytics Platform...
+echo Launching Full Stack Platform (FastAPI Backend + Streamlit Dashboard)...
 echo ======================================================================
 cd /d "%~dp0"
 call .venv\Scripts\activate.bat
+set PYTHONUTF8=1
+set PYTHONIOENCODING=utf-8
+
+echo [1/2] Starting FastAPI Backend on http://127.0.0.1:8000 ...
+start "FastAPI Backend Layer" run_backend.bat
+
+echo [2/2] Launching Interactive Streamlit Dashboard...
 streamlit run dashboard\app.py --browser.gatherUsageStats false
-pause
+if errorlevel 1 (
+    echo.
+    echo Streamlit failed to start. Check the terminal output above.
+    pause
+)
+endlocal

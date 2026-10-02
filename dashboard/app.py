@@ -27,6 +27,7 @@ from src.analysis import PerformanceAnalyzer
 from src.ml_predictor import StudentPerformancePredictor
 from src.utils import PALETTE, CATEGORY_COLORS, RISK_COLORS, generate_student_report_card, convert_df_to_csv, df_to_markdown_safe
 from src.file_uploader import parse_uploaded_academic_data, generate_sample_excel_template
+from src.api_client import api_client
 
 # Safe statsmodels detection for Plotly OLS trendlines
 try:
@@ -141,6 +142,16 @@ with st.sidebar:
     
     # Active Dataset indicator
     st.info(f"📁 **Active Data:** {st.session_state.get('data_source_name', 'Default Demo')}")
+    
+    # Live FastAPI Backend Status Indicator
+    is_api_online = api_client.is_backend_online()
+    if is_api_online:
+        st.success("🟢 **FastAPI Layer:** Connected (`:8000`)")
+        st.caption("[OpenAPI Swagger Docs](http://127.0.0.1:8000/docs)")
+    else:
+        st.info("🟡 **FastAPI Layer:** Direct DB/Models")
+        st.caption("Start `uvicorn backend.main:app` for REST APIs")
+        
     st.markdown("---")
     
     # Navigation
@@ -154,6 +165,7 @@ with st.sidebar:
             "⏱️ Attendance & Correlation",
             "🤖 ML Performance Predictor",
             "💻 SQL Query Explorer",
+            "🌐 API & Architecture",
             "📥 Export & Reports"
         ],
         index=0
@@ -855,7 +867,15 @@ elif menu == "🤖 ML Performance Predictor":
         predict_btn = st.button("🔮 Run Model Inference", type="primary")
 
     with s2:
-        res = predictor.predict(sim_att, sim_internal, sim_mid1, sim_mid2, sim_assign)
+        if api_client.is_backend_online():
+            api_pred = api_client.predict_performance(sim_att, sim_internal, sim_mid1, sim_mid2, sim_assign)
+            if api_pred:
+                res = api_pred
+                st.caption("⚡ *Inference served via FastAPI Endpoint: `POST /api/predictions`*")
+            else:
+                res = predictor.predict(sim_att, sim_internal, sim_mid1, sim_mid2, sim_assign)
+        else:
+            res = predictor.predict(sim_att, sim_internal, sim_mid1, sim_mid2, sim_assign)
         
         # Display Results
         pred_cat = res["predicted_category"]
@@ -1124,6 +1144,93 @@ Generated: Current Academic Session
         file_name="academic_performance_report.md",
         mime="text/markdown"
     )
+
+# ====================================================================
+# PAGE 8: API & SYSTEM ARCHITECTURE
+# ====================================================================
+elif menu == "🌐 API & Architecture":
+    st.markdown('<div class="main-header">🌐 FastAPI Backend & System Architecture</div>', unsafe_allow_html=True)
+    st.markdown('<div class="sub-header">Application Layer Decoupling Data Pipelines, ML Models, and Client Interfaces</div>', unsafe_allow_html=True)
+
+    online = api_client.is_backend_online()
+    if online:
+        st.success("🟢 **FastAPI Service Status: ONLINE** — Active on `http://127.0.0.1:8000`")
+    else:
+        st.warning("🟡 **FastAPI Service Status: OFFLINE** — Running in standalone direct-computation mode. Run `uvicorn backend.main:app --port 8000 --reload` to start the API.")
+
+    st.markdown("### 🏛️ End-to-End System Architecture")
+    st.markdown("""
+```
+                   AI-POWERED STUDENT PERFORMANCE SYSTEM
+                                    │
+           ┌────────────────────────┴────────────────────────┐
+           │                                                 │
+    DATA ENGINEERING LAYER                            APPLICATION LAYER
+           │                                                 │
+     ┌─────┴──────────────┐                           ┌──────┴──────┐
+     │                    │                           │             │
+  Pandas               PySpark                     FastAPI      Streamlit
+(Data Cleaning,     (Big Data Batch,             (REST APIs,   (Interactive
+ Deduplication)      Aggregations)                JWT Auth,     Dashboard &
+     │                    │                       Validation)    Visuals)
+     └─────────┬──────────┘                           ▲             ▲
+               │                                      │             │
+        SQLite Database ──────────────────────────────┤             │
+               │                                      │             │
+               ▼                                      │             │
+     Feature Engineering ───► Supervised ML Model ────┘             │
+     (Normalized Scores,      (RandomForest Classifier,             │
+      Attendance Tiers)        GradientBoosting Regressor)          │
+               │                                                    │
+               └────────────────────────────────────────────────────┘
+```
+    """)
+
+    st.markdown("### 🔌 API Endpoint Directory")
+    st.markdown("""
+| Domain | HTTP Method | Endpoint | Description |
+| :--- | :--- | :--- | :--- |
+| **Authentication** | `POST` | `/api/auth/register` | Register new user with hashed password & role (`ADMIN`/`USER`) |
+| | `POST` | `/api/auth/login` | Authenticate user & issue signed JWT Bearer Token |
+| | `GET` | `/api/auth/me` | Fetch authenticated caller's profile and permissions |
+| **Datasets** | `POST` | `/api/datasets/upload` | Upload CSV/Excel, validate schema, clean, update DB & models |
+| | `GET` | `/api/datasets` | List all processed dataset runs with timestamp and record counts |
+| | `GET` | `/api/datasets/{id}` | Inspect quality audit log, duplicates removed, and boundary clips |
+| **Students** | `GET` | `/api/students` | Paginated student records with multi-parameter filtering |
+| | `GET` | `/api/students/at-risk` | High-priority early-warning list for proactive interventions |
+| | `GET` | `/api/students/{id}` | Complete student academic transcript with course-by-course marks |
+| **Analytics** | `GET` | `/api/analytics/overview` | Headline KPIs: Total students, average marks, pass rate, at-risk count |
+| | `GET` | `/api/analytics/attendance` | Attendance distribution & statistical Pearson/Spearman correlation |
+| | `GET` | `/api/analytics/performance`| Grade band distribution & cross-department comparative benchmarks |
+| | `GET` | `/api/analytics/subjects` | Curriculum difficulty evaluation, failure rates, pass percentages |
+| **ML & Predictions**| `POST` | `/api/predictions` | Real-time grade prediction, probability distribution & recommendations |
+| | `GET` | `/api/predictions` | Retrieve recent simulation history |
+| **Model Metrics** | `GET` | `/api/model/info` | Architecture parameters, feature names, classes, training date |
+| | `GET` | `/api/model/metrics` | Accuracy, R² Score, RMSE, and feature importance rankings |
+    """)
+
+    st.markdown("### 🧪 Live API Interaction & Testing")
+    col_t1, col_t2 = st.columns(2)
+    with col_t1:
+        if st.button("🚀 Test GET /api/analytics/overview", use_container_width=True):
+            if online:
+                with st.spinner("Calling FastAPI..."):
+                    res = api_client.get_overview_kpis()
+                    st.json(res)
+            else:
+                st.error("FastAPI server is offline. Start the backend with: `uvicorn backend.main:app`")
+
+    with col_t2:
+        if st.button("🤖 Test GET /api/model/metrics", use_container_width=True):
+            if online:
+                with st.spinner("Calling FastAPI..."):
+                    res = api_client.get_model_metrics()
+                    st.json(res)
+            else:
+                st.error("FastAPI server is offline. Start the backend with: `uvicorn backend.main:app`")
+
+    st.markdown("---")
+    st.markdown("🔗 **Interactive Swagger UI:** Access full interactive API documentation at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) when the server is running.")
 
 # Footer
 st.markdown("---")
